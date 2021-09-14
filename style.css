@@ -1,68 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+  
 }
 
-/* Анимации */
-.bounceIn{animation-name:bounceIn;}
-@keyframes bounceInDown{from, 60%, 75%, 90%, to{animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-0%{opacity:0;transform:translate3d(0, -3000px, 0);}
-60%{opacity:1;transform:translate3d(0, 25px, 0);}
-75%{transform:translate3d(0, -10px, 0);}
-90%{transform:translate3d(0, 5px, 0);}
-to{transform:none;}
-}
-.bounceInDown{animation-name:bounceInDown;}
-@keyframes bounceInLeft{from, 60%, 75%, 90%, to{animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-0%{opacity:0;transform:translate3d(-3000px, 0, 0);}
-60%{opacity:1;transform:translate3d(25px, 0, 0);}
-75%{transform:translate3d(-10px, 0, 0);}
-90%{transform:translate3d(5px, 0, 0);}
-to{transform:none;}
-}
-.bounceInLeft{animation-name:bounceInLeft;}
-@keyframes bounceInRight{from, 60%, 75%, 90%, to{animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-from{opacity:0;transform:translate3d(3000px, 0, 0);}
-60%{opacity:1;transform:translate3d(-25px, 0, 0);}
-75%{transform:translate3d(10px, 0, 0);}
-90%{transform:translate3d(-5px, 0, 0);}
-to{transform:none;}
-}
-.bounceInRight{animation-name:bounceInRight;}
-@keyframes bounceInUp{from, 60%, 75%, 90%, to{animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-from{opacity:0;transform:translate3d(0, 3000px, 0);}
-60%{opacity:1;transform:translate3d(0, -20px, 0);}
-75%{transform:translate3d(0, 10px, 0);}
-90%{transform:translate3d(0, -5px, 0);}
-to{transform:translate3d(0, 0, 0);}
-}
-.bounceInUp{animation-name:bounceInUp;}
-@keyframes bounceOut{20%{transform:scale3d(.9, .9, .9);}
-50%, 55%{opacity:1;transform:scale3d(1.1, 1.1, 1.1);}
-to{opacity:0;transform:scale3d(.3, .3, .3);}
-}
-.bounceOut{animation-name:bounceOut;}
-@keyframes bounceOutDown{20%{transform:translate3d(0, 10px, 0);}
-40%, 45%{opacity:1;transform:translate3d(0, -20px, 0);}
-to{opacity:0;transform:translate3d(0, 2000px, 0);}
-}
-.bounceOutDown{animation-name:bounceOutDown;}
-@keyframes bounceOutLeft{20%{opacity:1;transform:translate3d(20px, 0, 0);}
-to{opacity:0;transform:translate3d(-2000px, 0, 0);}
-}
-.bounceOutLeft{animation-name:bounceOutLeft;}
-@keyframes bounceOutRight{20%{opacity:1;transform:translate3d(-20px, 0, 0);}
-to{opacity:0;transform:translate3d(2000px, 0, 0);}
-}
-.bounceOutRight{animation-name:bounceOutRight;}
-@keyframes bounceOutUp{20%{transform:translate3d(0, -10px, 0);}
-40%, 45%{opacity:1;transform:translate3d(0, 20px, 0);}
-to{opacity:0;transform:translate3d(0, -2000px, 0);}
-}
-.bounceOutUp{animation-name:bounceOutUp;}
-@keyframes fadeIn{from{opacity:0;}
-to{opacity:1;}
-}
 
 
 
@@ -71,6 +12,8 @@ to{opacity:1;}
 }
 .headerlogo {
     height: 720px;
+    overflow: hidden;
+
 }
 
 .headertext {
@@ -147,4 +90,64 @@ margin-left: auto;
 .me {
     animation-name: fadeInLeft;
     visibility: visible;
+}
+
+.kontakti {
+    background-color: rgba(221, 221, 221, 0.3);
+    height: auto;
+    margin-top: 90px;
+    
+}
+
+.nadpiskontakti {
+text-align: center;
+font-size: 2em;
+padding-top: 30px;
+}
+
+.kontaktitekst {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.2em;
+    line-height: 150%;
+}
+.message {
+    width: 200px;
+margin-left: 60px;
+
+font-size: 1.2em;
+text-align: left;
+}
+
+.mobilenumber {
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: bold;
+    line-height: 250%;
+
+    
+}
+
+.flexforkont {
+    margin-top: 70px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.footerr {
+    background-image: url("img/Footer-background.jpg");
+    height: auto;
+    overflow: hidden;
+    margin-top: 50px;
+
+}
+
+.footerr p {
+    margin-top: 40px;
+     font-size: 1.2em;
+color: white;
+padding-left: 20px;
+padding-top: 10px;
+padding-bottom: 20px;
 }
